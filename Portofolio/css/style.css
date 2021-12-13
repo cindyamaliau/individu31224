@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400&display=swap');
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 80px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Sen, sans-serif;
+}
+
+/*Header*/
+header {
+  display: inline;
+}
+nav {
+  background-color: #ee4e8b;
+  padding: 5px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+@media screen and (max-width: 375px) {
+  nav li a {
+    font-size: 0.9rem !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  nav li a {
+    font-size: 0.7rem !important;
+  }
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgba(191, 246, 248, 0.664);
+}
+nav a:hover {
+  transition: 1.4s;
+  border-bottom: 1px solid #e0589c;
+}
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #f74bcc;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.514);
+}
+.jumbotron p {
+  font-size: 1rem;
+  color: #E1E1E1;
+}
+/*End Header*/
+
+/*Main*/
+main {
+  padding: 20px;
+  overflow: auto;
+}
+#content {
+  float: right;
+  width: 67%;
+}
+article h2 {
+  color: #f0a6fa;
+  text-align: center;
+}
+article p {
+  text-indent: 1.2rem;
+}
+article img {
+  border-radius: 5px;
+}
+.it {
+  color: #f0a6fa;
+}
+.card {
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px lightgrey;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  background-color: rgb(174, 247, 243);
+}
+.featured-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+aside {
+  float: left;
+  width: 33%;
+  padding-right: 20px;
+}
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  .profile img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.profile header {
+  text-align: center;
+}
+.profile img {
+  width: 100%;
+  border-radius: 10px;
+}
+#profile .card {
+  box-shadow: 3px 3px 20px lightgrey;
+}
+aside table {
+  text-align: left;
+  margin-left:auto;
+  margin-right:auto;
+}
+/*End Main*/
+.gelombang {
+  position: relative;
+  top: 10px;
+}
+footer {
+  background-color: #f17bca;
+  padding: 20px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+img {
+  position: initial;
+}
